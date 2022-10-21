@@ -1,0 +1,17 @@
+button {
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  background: black;
+  font-size: 24px;
+  color: white;
+  margin: 0 5px;
+}
+
+button:hover {
+  transition: 0.1s;
+  transition-delay: 0.1s;
+  transition-timing-function: linear;
+  color: rgb(0, 0, 0);
+  background-color: whitesmoke;
+}
