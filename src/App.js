@@ -3,7 +3,6 @@ import MyInput from "./components/UI/input/MyInput";
 import MyButton from "./components/UI/button/MyButton";
 import "./styles/App.css";
 import PostList from "./components/PostList";
-import PostItem from "./components/PostItem";
 
 function App() {
   const [posts, setPosts] = useState([
@@ -11,7 +10,7 @@ function App() {
     { key: 123234, title: "obj3", body: "text2" },
   ]);
 
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(" ");
 
   const handleCreate = (e) => {
     e.preventDefault();
@@ -27,6 +26,7 @@ function App() {
     <div className="post">
       <form>
         <MyInput
+          value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Write your description"
         ></MyInput>
